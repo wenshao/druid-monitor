@@ -13,6 +13,7 @@ public class Server {
 
     @MField(desc = "服务器的唯一编码")
     private String number;
+    private String location;
     private String description;
 
     public String getNumber() {
@@ -37,6 +38,14 @@ public class Server {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 
 }
