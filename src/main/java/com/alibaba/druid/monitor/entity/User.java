@@ -1,5 +1,8 @@
 package com.alibaba.druid.monitor.entity;
 
+/**
+ * @author wenshao<szujobs@hotmail.com>
+ */
 public class User extends Entity {
 
     private String email;

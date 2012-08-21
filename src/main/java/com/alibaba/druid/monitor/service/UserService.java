@@ -5,6 +5,9 @@ import java.util.Date;
 import com.alibaba.druid.monitor.dao.UserMapper;
 import com.alibaba.druid.monitor.entity.User;
 
+/**
+ * @author wenshao<szujobs@hotmail.com>
+ */
 public class UserService {
 
     private SequenceService sequenceService;
@@ -18,7 +21,7 @@ public class UserService {
     public void setSequenceService(SequenceService sequenceService) {
         this.sequenceService = sequenceService;
     }
-    
+
     public boolean existsUser(String name) {
         throw new UnsupportedOperationException();
     }
