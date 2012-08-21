@@ -1,11 +1,11 @@
-package com.alibaba.druid.monitor.entity;
+package com.alibaba.druid.monitor.entity.config;
 
 /**
  * 服务器配置文件
  * 
  * @author wenshao<szujobs@hotmail.com>
  */
-public class ServerConfigFile {
+public class ConfigFile {
 
     private String path;
     private String content;
