@@ -1,5 +1,11 @@
 package com.alibaba.druid.monitor.entity;
 
+/**
+ * 服务器信息
+ * 
+ * @author wenshao<szujobs@hotmail.com>
+ *
+ */
 public class Server {
 
     public static final String OS_TYPE_GNU_LINUX = "GNU/Linux";

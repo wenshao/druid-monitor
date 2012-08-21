@@ -2,6 +2,9 @@ package com.alibaba.druid.monitor.entity;
 
 import java.util.Date;
 
+/**
+ * @author wenshao<szujobs@hotmail.com>
+ */
 public class AppFollower {
 
     private long appId;
