@@ -18,6 +18,10 @@ public class UserService {
     public void setSequenceService(SequenceService sequenceService) {
         this.sequenceService = sequenceService;
     }
+    
+    public boolean existsUser(String name) {
+        throw new UnsupportedOperationException();
+    }
 
     public User createUser(String name, String email, String password) {
         long id = sequenceService.generateUserId();
