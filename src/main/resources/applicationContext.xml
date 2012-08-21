@@ -39,5 +39,7 @@
 		<property name="filters" value="stat" />
 	</bean>
 
-
+	<bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sqlSessionFactory">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
 </beans>
