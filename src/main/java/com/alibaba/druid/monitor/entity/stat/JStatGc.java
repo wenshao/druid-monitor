@@ -1,6 +1,6 @@
 package com.alibaba.druid.monitor.entity.stat;
 
-import com.alibaba.druid.monitor.annotation.StatField;
+import com.alibaba.druid.monitor.annotation.MField;
 
 /**
  * 对应jstat -gc <pid>
@@ -9,49 +9,49 @@ import com.alibaba.druid.monitor.annotation.StatField;
  */
 public class JStatGc {
 
-    @StatField(desc = "年轻代中第一个survivor（幸存区）的容量")
+    @MField(desc = "年轻代中第一个survivor（幸存区）的容量")
     private float s0c;
 
-    @StatField(desc = "年轻代中第二个survivor（幸存区）的容量")
+    @MField(desc = "年轻代中第二个survivor（幸存区）的容量")
     private float s1c;
 
-    @StatField(desc = "年轻代中第一个survivor（幸存区）目前已使用空间")
+    @MField(desc = "年轻代中第一个survivor（幸存区）目前已使用空间")
     private float s0u;
 
-    @StatField(desc = "年轻代中第二个survivor（幸存区）目前已使用空间")
+    @MField(desc = "年轻代中第二个survivor（幸存区）目前已使用空间")
     private float s1u;
 
-    @StatField(desc = "年轻代中Eden（伊甸园）的容量")
+    @MField(desc = "年轻代中Eden（伊甸园）的容量")
     private float ec;
 
-    @StatField(desc = "年轻代中Eden（伊甸园）目前已使用空间")
+    @MField(desc = "年轻代中Eden（伊甸园）目前已使用空间")
     private float eu;
 
-    @StatField(desc = "Old代的容量")
+    @MField(desc = "Old代的容量")
     private float oc;
 
-    @StatField(desc = "Old代目前已使用空间")
+    @MField(desc = "Old代目前已使用空间")
     private float ou;
 
-    @StatField(desc = "Perm(持久代)的容量")
+    @MField(desc = "Perm(持久代)的容量")
     private float pc;
 
-    @StatField(desc = "Perm(持久代)目前已使用空间")
+    @MField(desc = "Perm(持久代)目前已使用空间")
     private float pu;
 
-    @StatField(desc = "从应用程序启动到采样时年轻代中gc次数")
+    @MField(desc = "从应用程序启动到采样时年轻代中gc次数")
     private int   ygc;
 
-    @StatField(desc = "从应用程序启动到采样时年轻代中gc所用时间(s)")
+    @MField(desc = "从应用程序启动到采样时年轻代中gc所用时间(s)")
     private float ygct;
 
-    @StatField(desc = "从应用程序启动到采样时old代(全gc)gc次数")
+    @MField(desc = "从应用程序启动到采样时old代(全gc)gc次数")
     private int   fgc;
 
-    @StatField(desc = "从应用程序启动到采样时old代(全gc)gc所用时间(s)")
+    @MField(desc = "从应用程序启动到采样时old代(全gc)gc所用时间(s)")
     private float fgct;
 
-    @StatField(desc = "从应用程序启动到采样时gc用的总时间(s)")
+    @MField(desc = "从应用程序启动到采样时gc用的总时间(s)")
     private float gct;
 
     public float getS0c() {

@@ -1,7 +1,6 @@
 package com.alibaba.druid.monitor.entity;
 
-import com.alibaba.druid.monitor.entity.config.CPU;
-import com.alibaba.druid.monitor.entity.config.OS;
+import com.alibaba.druid.monitor.annotation.MField;
 
 /**
  * 服务器信息
@@ -10,26 +9,11 @@ import com.alibaba.druid.monitor.entity.config.OS;
  */
 public class Server {
 
-    public static final String OS_TYPE_GNU_LINUX = "GNU/Linux";
+    private long   id;
 
-    public static final String OS_ARCH_X86_32    = "x86_32";
-    public static final String OS_ARCH_X86_64    = "x86_64";
-
-    /**
-     * 服务器的唯一编码
-     */
-    private String             number;
-
-    private CPU                cpu;
-    private OS                 os;
-
-    public OS getOs() {
-        return os;
-    }
-
-    public void setOs(OS os) {
-        this.os = os;
-    }
+    @MField(desc = "服务器的唯一编码")
+    private String number;
+    private String description;
 
     public String getNumber() {
         return number;
@@ -39,11 +23,20 @@ public class Server {
         this.number = number;
     }
 
-    public CPU getCpu() {
-        return cpu;
+    public long getId() {
+        return id;
     }
 
-    public void setCpu(CPU cpu) {
-        this.cpu = cpu;
+    public void setId(long id) {
+        this.id = id;
     }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
 }

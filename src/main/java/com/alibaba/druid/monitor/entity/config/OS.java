@@ -1,12 +1,16 @@
 package com.alibaba.druid.monitor.entity.config;
 
-
 public class OS {
 
-    private String type;
-    private String kernel;
-    private String version;
-    private String arch;
+    public static final String OS_TYPE_GNU_LINUX = "GNU/Linux";
+
+    public static final String OS_ARCH_X86_32    = "x86_32";
+    public static final String OS_ARCH_X86_64    = "x86_64";
+
+    private String             type;
+    private String             kernel;
+    private String             version;
+    private String             arch;
 
     public String getType() {
         return type;
