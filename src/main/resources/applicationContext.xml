@@ -32,7 +32,6 @@
 		<property name="password" value="${jdbc.password}" />
 		<property name="maxActive" value="${druid.maxActive}" />
 		<property name="minIdle" value="${druid.minIdle}" />
-		<property name="connectionProperties" value="druid.stat.slowSqlMillis=10" />
 		<property name="filters" value="stat" />
 	</bean>
 
