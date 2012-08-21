@@ -25,7 +25,6 @@
 	<tx:annotation-driven transaction-manager="transactionManager"
 		proxy-target-class="true" />
 
-	<!-- 数据源配置, 使用Druid数据库连接池 -->
 	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
 		init-method="init" destroy-method="close">
 		<property name="url" value="${jdbc.url}" />
@@ -34,12 +33,15 @@
 		<property name="maxActive" value="${druid.maxActive}" />
 		<property name="minIdle" value="${druid.minIdle}" />
 		<property name="connectionProperties" value="druid.stat.slowSqlMillis=10" />
-
-		<!-- 添加监控用途的statFilter -->
 		<property name="filters" value="stat" />
 	</bean>
 
-	<bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sqlSessionFactory">
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<bean id="userMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
+		<property name="mapperInterface" value="com.alibaba.druid.monitor.dao.UserMapper" />
 	</bean>
 </beans>
