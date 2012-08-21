@@ -1,6 +1,6 @@
-package com.alibaba.druid.monitor.entity;
+package com.alibaba.druid.monitor.entity.stat;
 
-public class ServerNetConnection {
+public class NetStat {
 
     private String protocol;
     private String local;

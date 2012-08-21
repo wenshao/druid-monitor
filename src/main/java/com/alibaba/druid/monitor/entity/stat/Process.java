@@ -1,4 +1,4 @@
-package com.alibaba.druid.monitor.entity;
+package com.alibaba.druid.monitor.entity.stat;
 
 import java.util.Date;
 
@@ -7,7 +7,7 @@ import java.util.Date;
  * 
  * @author wenshao<szujobs@hotmail.com>
  */
-public class ServerProcess {
+public class Process {
 
     private int    pid;
 

@@ -1,4 +1,4 @@
-package com.alibaba.druid.monitor.entity;
+package com.alibaba.druid.monitor.entity.stat;
 
 import com.alibaba.druid.monitor.annotation.StatField;
 

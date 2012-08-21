@@ -1,4 +1,4 @@
-package com.alibaba.druid.monitor.entity;
+package com.alibaba.druid.monitor.entity.stat;
 
 /**
  * 对应jstat -compiler <pid>
