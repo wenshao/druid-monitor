@@ -1,4 +1,6 @@
-package com.alibaba.druid.monitor.entity;
+package com.alibaba.druid.monitor.entity.basic;
+
+import com.alibaba.druid.monitor.entity.Entity;
 
 /**
  * @author wenshao<szujobs@hotmail.com>
