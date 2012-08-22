@@ -13,7 +13,10 @@ public class Server {
 
     @MField(desc = "服务器的唯一编码")
     private String number;
+
+    @MField(name = "位置", desc = "地理位置信息")
     private String location;
+    
     private String description;
 
     public String getNumber() {
