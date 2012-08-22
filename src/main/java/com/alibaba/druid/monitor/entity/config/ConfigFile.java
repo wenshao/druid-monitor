@@ -1,10 +1,8 @@
 package com.alibaba.druid.monitor.entity.config;
 
-/**
- * 服务器配置文件
- * 
- * @author wenshao<szujobs@hotmail.com>
- */
+import com.alibaba.druid.monitor.annotation.MType;
+
+@MType(name = "服务器配置文件")
 public class ConfigFile {
 
     private String path;
