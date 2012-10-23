@@ -5,6 +5,13 @@
 
 	<display-name>druid-monitor</display-name>
 
+	<context-param>
+		<param-name>monitorServerUrl</param-name>
+		<param-value>http://localhost:8080/data_receiver/</param-value>
+	</context-param>
+	<listener>
+		<listener-class>com.alibaba.druid.support.monitor.PushServiceListener</listener-class>
+	</listener>
 
 
 	<filter>
@@ -35,6 +42,14 @@
 	<servlet-mapping>
 		<servlet-name>DruidStatView</servlet-name>
 		<url-pattern>/druid/*</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DruidStatReceiverServlet</servlet-name>
+		<servlet-class>com.alibaba.druid.monitor.DruidStatReceiverServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DruidStatReceiverServlet</servlet-name>
+		<url-pattern>/data_receiver/*</url-pattern>
 	</servlet-mapping>
 
 	<!-- session超时定义,单位为分钟 -->
