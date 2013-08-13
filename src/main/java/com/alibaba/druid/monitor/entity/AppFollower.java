@@ -1,4 +1,4 @@
-package com.alibaba.druid.monitor.entity.basic;
+package com.alibaba.druid.monitor.entity;
 
 import java.util.Date;
 

@@ -3,7 +3,7 @@ package com.alibaba.druid.monitor.service;
 import java.util.Date;
 
 import com.alibaba.druid.monitor.dao.UserMapper;
-import com.alibaba.druid.monitor.entity.basic.User;
+import com.alibaba.druid.monitor.entity.User;
 
 /**
  * @author wenshao<szujobs@hotmail.com>

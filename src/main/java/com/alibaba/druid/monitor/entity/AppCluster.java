@@ -1,6 +1,5 @@
-package com.alibaba.druid.monitor.entity.basic;
+package com.alibaba.druid.monitor.entity;
 
-import com.alibaba.druid.monitor.entity.Entity;
 
 public class AppCluster extends Entity {
 

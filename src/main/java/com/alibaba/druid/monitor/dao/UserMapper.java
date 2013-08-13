@@ -3,7 +3,7 @@ package com.alibaba.druid.monitor.dao;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 
-import com.alibaba.druid.monitor.entity.basic.User;
+import com.alibaba.druid.monitor.entity.User;
 
 public interface UserMapper {
 
